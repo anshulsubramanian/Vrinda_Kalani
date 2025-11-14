@@ -145,7 +145,7 @@ const WhiteMinimalProject = () => {
             </p>
           </div>
           <div className="rounded-2xl overflow-hidden shadow-2xl">
-            <img src={import.meta.env.BASE_URL + 'mood_boards/YellowWhiteMoodBoard.jpeg'} alt="White Studios Minimal mood board" className="w-full h-[600px] object-cover" />
+            <img src={import.meta.env.BASE_URL + 'mood_boards/YellowWhiteMoodBoard.jpeg'} alt="White Studios Minimal mood board" className="w-full h-auto object-contain" />
           </div>
         </div>
       </section>
@@ -196,7 +196,7 @@ const WhiteMinimalProject = () => {
                 {product.images.length > 0 && (
                   <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {product.images.map((image, imgIndex) => (
-                      <div key={imgIndex} className="rounded-xl overflow-hidden flex items-center justify-center bg-white">
+                      <div key={imgIndex} className="rounded-xl overflow-hidden flex items-center justify-center">
                         <img
                           src={image}
                           alt={`${product.name} view ${imgIndex + 1}`}
@@ -221,8 +221,8 @@ const WhiteMinimalProject = () => {
             <h2 className="text-xl text-muted-foreground mb-12">As showcased in Design Democracy, Hyderabad, September 2025</h2>
             <div className="grid md:grid-cols-2 gap-6">
               {additionalImages.map((img, i) => (
-                <div key={i} className="rounded-2xl overflow-hidden shadow-2xl bg-white">
-                  <img src={img} alt={`Additional ${i + 1}`} className="w-full h-full object-contain" loading="lazy" />
+                <div key={i} className="rounded-2xl overflow-hidden shadow-2xl">
+                  <img src={img} alt={`Additional ${i + 1}`} className="w-full h-auto object-contain" loading="lazy" />
                 </div>
               ))}
             </div>

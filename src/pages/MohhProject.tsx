@@ -85,8 +85,8 @@ const MohhProject = () => {
   ];
 
   const drawings = [
-    { name: "Brooks Sideboard Technical Drawing", images: [import.meta.env.BASE_URL + 'Mohh/drawings/brooks_sideboard_drawing.jpg'] },
-    { name: "Evara Barstool Technical Drawing", images: [import.meta.env.BASE_URL + 'Mohh/drawings/evara_barstool_drawing.jpg'] },
+    //{ name: "Brooks Sideboard Technical Drawing", images: [import.meta.env.BASE_URL + 'Mohh/drawings/brooks_sideboard_drawing.jpg'] },
+    //{ name: "Evara Barstool Technical Drawing", images: [import.meta.env.BASE_URL + 'Mohh/drawings/evara_barstool_drawing.jpg'] },
     { name: "Quinn Lounge Chair Technical Drawing", images: [
         import.meta.env.BASE_URL + 'Mohh/drawings/quinn_lounge_chair_page_1.jpg',
         import.meta.env.BASE_URL + 'Mohh/drawings/quinn_lounge_chair_page_2.jpg',
@@ -167,8 +167,9 @@ const MohhProject = () => {
                 <TabsTrigger value="tables" className="px-4">Tables</TabsTrigger>
                 <TabsTrigger value="loungechairs" className="px-4">Lounge Chairs</TabsTrigger>
                 <TabsTrigger value="sofas" className="px-4">Sofas</TabsTrigger>
-                <TabsTrigger value="drawings" className="px-4">Drawings</TabsTrigger>
                 <TabsTrigger value="decor" className="px-4">Decor</TabsTrigger>
+                <TabsTrigger value="drawings" className="px-4">Drawings</TabsTrigger>
+                
               </TabsList>
             </div>
 
