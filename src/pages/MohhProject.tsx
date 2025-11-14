@@ -87,21 +87,21 @@ const MohhProject = () => {
   const drawings = [
     //{ name: "Brooks Sideboard Technical Drawing", images: [import.meta.env.BASE_URL + 'Mohh/drawings/brooks_sideboard_drawing.jpg'] },
     //{ name: "Evara Barstool Technical Drawing", images: [import.meta.env.BASE_URL + 'Mohh/drawings/evara_barstool_drawing.jpg'] },
-    { name: "Quinn Lounge Chair Technical Drawing", images: [
-        import.meta.env.BASE_URL + 'Mohh/drawings/quinn_1.png',
-        import.meta.env.BASE_URL + 'Mohh/drawings/quinn_2.png',
-        import.meta.env.BASE_URL + 'Mohh/drawings/quinn_3.png',
-        import.meta.env.BASE_URL + 'Mohh/drawings/quinn_4.png',
-        import.meta.env.BASE_URL + 'Mohh/drawings/quinn_5.png',
-        import.meta.env.BASE_URL + 'Mohh/drawings/quinn_6.png',
-        import.meta.env.BASE_URL + 'Mohh/drawings/quinn_7.png',
-        import.meta.env.BASE_URL + 'Mohh/drawings/quinn_8.png',
-        import.meta.env.BASE_URL + 'Mohh/drawings/quinn_9.png',
-        import.meta.env.BASE_URL + 'Mohh/drawings/quinn_10.png',
-        import.meta.env.BASE_URL + 'Mohh/drawings/quinn_11.png',
-        import.meta.env.BASE_URL + 'Mohh/drawings/quinn_12.png',
-        //import.meta.env.BASE_URL + 'Mohh/drawings/quinn_lounge_chair_page_13.jpg',
-    ] },
+  { name: "Quinn Lounge Chair Technical Drawing", images: [
+    import.meta.env.BASE_URL + 'Mohh/drawings/quinn 1.png',
+    import.meta.env.BASE_URL + 'Mohh/drawings/quinn 2.png',
+    import.meta.env.BASE_URL + 'Mohh/drawings/quinn 3.png',
+    import.meta.env.BASE_URL + 'Mohh/drawings/quinn 4.png',
+    import.meta.env.BASE_URL + 'Mohh/drawings/quinn 5.png',
+    import.meta.env.BASE_URL + 'Mohh/drawings/quinn 6.png',
+    import.meta.env.BASE_URL + 'Mohh/drawings/quinn 7.png',
+    import.meta.env.BASE_URL + 'Mohh/drawings/quinn 8.png',
+    import.meta.env.BASE_URL + 'Mohh/drawings/quinn 9.png',
+    import.meta.env.BASE_URL + 'Mohh/drawings/quinn 10.png',
+    import.meta.env.BASE_URL + 'Mohh/drawings/quinn 11.png',
+    import.meta.env.BASE_URL + 'Mohh/drawings/quinn 12.png',
+    //import.meta.env.BASE_URL + 'Mohh/drawings/quinn_lounge_chair_page_13.jpg',
+  ] },
   ];
 
   const decorObjects = [
