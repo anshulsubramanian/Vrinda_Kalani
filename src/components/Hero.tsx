@@ -8,7 +8,7 @@ const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center animate-gradient"
         style={{
-          backgroundImage: "url('/gradient.png')",
+          backgroundImage: `url('${import.meta.env.BASE_URL}gradient.png')`,
           backgroundSize: "200% 200%"
         }}
       />

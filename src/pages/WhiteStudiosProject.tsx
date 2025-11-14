@@ -52,7 +52,7 @@ const WhiteStudiosProject = () => {
       <section 
         className="pt-32 pb-16 px-4 relative bg-cover bg-center"
         style={{ 
-          backgroundImage: "url('/Covers/White White Studio.png')",
+          backgroundImage: `url('${import.meta.env.BASE_URL}Covers/White White Studio.png')`,
           minHeight: "70vh"
         }}
       >
@@ -83,7 +83,7 @@ const WhiteStudiosProject = () => {
           </div>
           <div className="rounded-2xl overflow-hidden shadow-2xl">
             <img 
-              src="/mood_boards/mood board new.png" 
+              src={import.meta.env.BASE_URL + 'mood_boards/mood board new.png'} 
               alt="White Studios Mood Board" 
               className="w-full h-[600px] object-cover"
             />
@@ -97,18 +97,18 @@ const WhiteStudiosProject = () => {
           <h2 className="text-4xl font-bold mb-12">Sketches</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src="/White_Studios/sketches_1.png" 
-                alt="White Studios Design Sketches 1" 
-                className="w-full object-cover"
-              />
+                <img 
+                  src={import.meta.env.BASE_URL + 'White_Studios/sketches_1.png'} 
+                  alt="White Studios Design Sketches 1" 
+                  className="w-full object-cover"
+                />
             </div>
             <div className="rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src="/White_Studios/sketches_2.png" 
-                alt="White Studios Design Sketches 2" 
-                className="w-full object-cover"
-              />
+                <img 
+                  src={import.meta.env.BASE_URL + 'White_Studios/sketches_2.png'} 
+                  alt="White Studios Design Sketches 2" 
+                  className="w-full object-cover"
+                />
             </div>
           </div>
         </div>

@@ -40,134 +40,89 @@ const MohhProject = () => {
     canonical.setAttribute("href", window.location.href);
   }, []);
 
+  // Bar stools
   const barStools = [
-    {
-      name: "Raya Bar Stool",
-      images: ["/Mohh/Raya_Bar_Stool.jpg"],
-    },
-    {
-      name: "Evara Bar Stool",
-      images: ["/Mohh/Evara_Bar_Stool.jpg"],
-    },
+    { name: "Raya Bar Stool", images: [import.meta.env.BASE_URL + 'Mohh/Raya_Bar_Stool.jpg'] },
+    { name: "Evara Bar Stool", images: [import.meta.env.BASE_URL + 'Mohh/Evara_Bar_Stool.jpg'] },
   ];
 
   const chairs = [
-    {
-      name: "Ukiyo Chair",
-      images: ["/Mohh/Ukiyo_Chair.jpg"],
-    },
-    {
-      name: "Ludic Dining Chair",
-      images: ["/Mohh/Ludic_Chair_1.jpg", "/Mohh/Ludic_Chair_2.jpg"],
-    },
-    {
-      name: "Elora Dining Chair",
-      images: ["/Mohh/Elora_Chair_1.jpg", "/Mohh/Elora_Chair_2.jpg"],
-    },
+    { name: "Ukiyo Chair", images: [import.meta.env.BASE_URL + 'Mohh/Ukiyo_Chair.jpg'] },
+    { name: "Ludic Dining Chair", images: [import.meta.env.BASE_URL + 'Mohh/Ludic_Chair_1.jpg', import.meta.env.BASE_URL + 'Mohh/Ludic_Chair_2.jpg'] },
+    { name: "Elora Dining Chair", images: [import.meta.env.BASE_URL + 'Mohh/Elora_Chair_1.jpg', import.meta.env.BASE_URL + 'Mohh/Elora_Chair_2.jpg'] },
   ];
 
   const consoles = [
-    {
-      name: "Juno Console",
-      images: [junoConsole],
-    },
-    {
-      name: "Devoara Console",
-      images: [devoaraConsole, devoaraConsole1],
-    },
+    { name: "Juno Console", images: [junoConsole] },
+    { name: "Devoara Console", images: [devoaraConsole, devoaraConsole1] },
   ];
 
   const tables = [
-    {
-      name: "Renne Coffee Table",
-  images: [renneCoffee, "/Mohh/Renne Coffee Table_Lifestyle.jpg"],
-    },
-    {
-      name: "Liana Coffee Table",
-      images: [lianaCoffee],
-    },
-    {
-      name: "Nerissa Coffee Table",
-      images: [nerissaTable],
-    },
-    {
-      name: "Celia End Table",
-      images: [celiaEndTable],
-    },
-    {
-      name: "Carmel End Table",
-      images: [carmelEndTable],
-    },
-    {
-      name: "Puzzle Side Table",
-      images: [puzzleSideTable],
-    },
+    { name: "Renne Coffee Table", images: [renneCoffee, import.meta.env.BASE_URL + 'Mohh/Renne Coffee Table_Lifestyle.jpg'] },
+    { name: "Liana Coffee Table", images: [lianaCoffee] },
+    { name: "Nerissa Coffee Table", images: [nerissaTable] },
+    { name: "Celia End Table", images: [celiaEndTable] },
+    { name: "Carmel End Table", images: [carmelEndTable] },
+    { name: "Puzzle Side Table", images: [puzzleSideTable] },
   ];
 
-  // Lounge Chairs
   const loungeChairs = [
-    { name: "Quinn Lounge Chair", images: ["/Mohh/lounge_chairs/quinn_lounge_chair_2.jpg", "/Mohh/lounge_chairs/quinn_lounge_chair_1.jpg"] },
-    { name: "Kalon Swivel Chair", images: ["/Mohh/lounge_chairs/kalon_swivel_chair.jpg", "/Mohh/lounge_chairs/kalon_swivel_chair_1.jpg"] },
+    { name: "Quinn Lounge Chair", images: [import.meta.env.BASE_URL + 'Mohh/lounge_chairs/quinn_lounge_chair_2.jpg', import.meta.env.BASE_URL + 'Mohh/lounge_chairs/quinn_lounge_chair_1.jpg'] },
+    { name: "Kalon Swivel Chair", images: [import.meta.env.BASE_URL + 'Mohh/lounge_chairs/kalon_swivel_chair.jpg', import.meta.env.BASE_URL + 'Mohh/lounge_chairs/kalon_swivel_chair_1.jpg'] },
   ];
 
-  // Sofas
   const sofas = [
-    { name: "Marlow", images: ["/Mohh/sofas/sectional_sofa.png"] },
-    { name: "Bexley", images: ["/Mohh/sofas/sofa_lifestyle.jpg", "/Mohh/sofas/sofa_lifestyle_1.jpg"] },
-    { name: "Astra", images: ["/Mohh/sofas/curved_sofa.png"] },
+    { name: "Marlow", images: [import.meta.env.BASE_URL + 'Mohh/sofas/sectional_sofa.png'] },
+    { name: "Bexley", images: [import.meta.env.BASE_URL + 'Mohh/sofas/sofa_lifestyle.jpg', import.meta.env.BASE_URL + 'Mohh/sofas/sofa_lifestyle_1.jpg'] },
+    { name: "Astra", images: [import.meta.env.BASE_URL + 'Mohh/sofas/curved_sofa.png'] },
   ];
 
-  // Storage
   const storage = [
-    { name: "Zephyr Sideboard", images: ["/Mohh/storage/zephyr_sideboard_lifestyle.jpg", "/Mohh/storage/zephyr_sideboard_lifestyle_1.jpg"] },
-    { name: "Zephyr Media Unit", images: ["/Mohh/storage/zephyr_media_unit_lifestyle.jpg", "/Mohh/storage/zephyr_media_unit_lifestyle_1.jpg"] },
-    { name: "Brooks Sideboard", images: ["/Mohh/storage/brooks_sideboard.png"] },
-  { name: "Mike Media Unit", images: ["/Mohh/storage/mike media unit.png"] },
+    { name: "Zephyr Sideboard", images: [import.meta.env.BASE_URL + 'Mohh/storage/zephyr_sideboard_lifestyle.jpg', import.meta.env.BASE_URL + 'Mohh/storage/zephyr_sideboard_lifestyle_1.jpg'] },
+    { name: "Zephyr Media Unit", images: [import.meta.env.BASE_URL + 'Mohh/storage/zephyr_media_unit_lifestyle.jpg', import.meta.env.BASE_URL + 'Mohh/storage/zephyr_media_unit_lifestyle_1.jpg'] },
+    { name: "Brooks Sideboard", images: [import.meta.env.BASE_URL + 'Mohh/storage/brooks_sideboard.png'] },
+    { name: "Mike Media Unit", images: [import.meta.env.BASE_URL + 'Mohh/storage/mike media unit.png'] },
   ];
 
-  // Drawings
   const drawings = [
-    { name: "Zephyr Sideboard Technical Drawing", images: ["/Mohh/drawings/zephyr_sideboard_drawing.jpg"] },
-    { name: "Brooks Sideboard Technical Drawing", images: ["/Mohh/drawings/brooks_sideboard_drawing.jpg"] },
-    { name: "Evara Barstool Technical Drawing", images: ["/Mohh/drawings/evara_barstool_drawing.jpg"] },
-    { 
-      name: "Quinn Lounge Chair Technical Drawing", 
-      images: [
-        "/Mohh/drawings/quinn_lounge_chair_page_1.jpg",
-        "/Mohh/drawings/quinn_lounge_chair_page_2.jpg",
-        "/Mohh/drawings/quinn_lounge_chair_page_3.jpg",
-        "/Mohh/drawings/quinn_lounge_chair_page_4.jpg",
-        "/Mohh/drawings/quinn_lounge_chair_page_5.jpg",
-        "/Mohh/drawings/quinn_lounge_chair_page_6.jpg",
-        "/Mohh/drawings/quinn_lounge_chair_page_7.jpg",
-        "/Mohh/drawings/quinn_lounge_chair_page_8.jpg",
-        "/Mohh/drawings/quinn_lounge_chair_page_9.jpg",
-        "/Mohh/drawings/quinn_lounge_chair_page_10.jpg",
-        "/Mohh/drawings/quinn_lounge_chair_page_11.jpg",
-        "/Mohh/drawings/quinn_lounge_chair_page_12.jpg",
-        "/Mohh/drawings/quinn_lounge_chair_page_13.jpg",
-      ] 
-    },
+    { name: "Zephyr Sideboard Technical Drawing", images: [import.meta.env.BASE_URL + 'Mohh/drawings/zephyr_sideboard_drawing.jpg'] },
+    { name: "Brooks Sideboard Technical Drawing", images: [import.meta.env.BASE_URL + 'Mohh/drawings/brooks_sideboard_drawing.jpg'] },
+    { name: "Evara Barstool Technical Drawing", images: [import.meta.env.BASE_URL + 'Mohh/drawings/evara_barstool_drawing.jpg'] },
+    { name: "Quinn Lounge Chair Technical Drawing", images: [
+        import.meta.env.BASE_URL + 'Mohh/drawings/quinn_lounge_chair_page_1.jpg',
+        import.meta.env.BASE_URL + 'Mohh/drawings/quinn_lounge_chair_page_2.jpg',
+        import.meta.env.BASE_URL + 'Mohh/drawings/quinn_lounge_chair_page_3.jpg',
+        import.meta.env.BASE_URL + 'Mohh/drawings/quinn_lounge_chair_page_4.jpg',
+        import.meta.env.BASE_URL + 'Mohh/drawings/quinn_lounge_chair_page_5.jpg',
+        import.meta.env.BASE_URL + 'Mohh/drawings/quinn_lounge_chair_page_6.jpg',
+        import.meta.env.BASE_URL + 'Mohh/drawings/quinn_lounge_chair_page_7.jpg',
+        import.meta.env.BASE_URL + 'Mohh/drawings/quinn_lounge_chair_page_8.jpg',
+        import.meta.env.BASE_URL + 'Mohh/drawings/quinn_lounge_chair_page_9.jpg',
+        import.meta.env.BASE_URL + 'Mohh/drawings/quinn_lounge_chair_page_10.jpg',
+        import.meta.env.BASE_URL + 'Mohh/drawings/quinn_lounge_chair_page_11.jpg',
+        import.meta.env.BASE_URL + 'Mohh/drawings/quinn_lounge_chair_page_12.jpg',
+        import.meta.env.BASE_URL + 'Mohh/drawings/quinn_lounge_chair_page_13.jpg',
+    ] },
   ];
 
-  // Decor Objects
   const decorObjects = [
-    { name: "Florie Trivet", images: ["/Mohh/decor/florie_trivet.png"] },
-    { name: "Florie Tea Coaster", images: ["/Mohh/decor/forie_tea_coaster.png"] },
-    { name: "Florie Cake Stand", images: ["/Mohh/decor/florie_cake_stand_lifestyle.jpg", "/Mohh/decor/florie_cake_stand_lifestyle_2.jpg"] },
-    { name: "Cora Cake Stand", images: ["/Mohh/decor/cora_cake_stand_lifestyle.jpg"] },
-    { name: "Dallas Lamp", images: ["/Mohh/decor/dallas_lamp.png"] },
-    { name: "Fika Bookends", images: ["/Mohh/decor/fika_bookends_lifestyle_1.jpg"] },
-    { name: "Camilia Wall Mirror", images: ["/Mohh/decor/camilia_wall_mirror.png"] },
-    { name: "Briar Vase", images: ["/Mohh/decor/briar_vase.png"] },
-    { name: "Ayla Tissue Box", images: ["/Mohh/decor/ayla_tissue_box.png"] },
-    { name: "Florie Planter", images: ["/Mohh/decor/florie_planter.png"] },
-    { name: "Kai Tealight Holder", images: ["/Mohh/decor/kai_tealight_holder.jpg"] },
-    { name: "Oven Table Lamp", images: ["/Mohh/decor/oven_table_lamp.jpg"] },
-    { name: "Hugo Lamp", images: ["/Mohh/decor/hugo_lamp.png"] },
-    { name: "Hayes Candle Holder", images: ["/Mohh/decor/hayes_candle_holder.jpg"] },
-    { name: "Freya Vase", images: ["/Mohh/decor/freya_vase.jpg"] },
+    { name: "Florie Trivet", images: [import.meta.env.BASE_URL + 'Mohh/decor/florie_trivet.png'] },
+    { name: "Florie Tea Coaster", images: [import.meta.env.BASE_URL + 'Mohh/decor/forie_tea_coaster.png'] },
+    { name: "Florie Cake Stand", images: [import.meta.env.BASE_URL + 'Mohh/decor/florie_cake_stand_lifestyle.jpg', import.meta.env.BASE_URL + 'Mohh/decor/florie_cake_stand_lifestyle_2.jpg'] },
+    { name: "Cora Cake Stand", images: [import.meta.env.BASE_URL + 'Mohh/decor/cora_cake_stand_lifestyle.jpg'] },
+    { name: "Dallas Lamp", images: [import.meta.env.BASE_URL + 'Mohh/decor/dallas_lamp.png'] },
+    { name: "Fika Bookends", images: [import.meta.env.BASE_URL + 'Mohh/decor/fika_bookends_lifestyle_1.jpg'] },
+    { name: "Camilia Wall Mirror", images: [import.meta.env.BASE_URL + 'Mohh/decor/camilia_wall_mirror.png'] },
+    { name: "Briar Vase", images: [import.meta.env.BASE_URL + 'Mohh/decor/briar_vase.png'] },
+    { name: "Ayla Tissue Box", images: [import.meta.env.BASE_URL + 'Mohh/decor/ayla_tissue_box.png'] },
+    { name: "Florie Planter", images: [import.meta.env.BASE_URL + 'Mohh/decor/florie_planter.png'] },
+    { name: "Kai Tealight Holder", images: [import.meta.env.BASE_URL + 'Mohh/decor/kai_tealight_holder.jpg'] },
+    { name: "Oven Table Lamp", images: [import.meta.env.BASE_URL + 'Mohh/decor/oven_table_lamp.jpg'] },
+    { name: "Hugo Lamp", images: [import.meta.env.BASE_URL + 'Mohh/decor/hugo_lamp.png'] },
+    { name: "Hayes Candle Holder", images: [import.meta.env.BASE_URL + 'Mohh/decor/hayes_candle_holder.jpg'] },
+    { name: "Freya Vase", images: [import.meta.env.BASE_URL + 'Mohh/decor/freya_vase.jpg'] },
   ];
+  
 
   return (
     <div className="min-h-screen bg-background">
@@ -183,7 +138,7 @@ const MohhProject = () => {
       {/* Hero Section */}
       <section
         className="pt-32 pb-16 px-4 relative bg-cover bg-center"
-        style={{ backgroundImage: "url('/Covers/Mohh cover.png')", minHeight: "70vh" }}
+  style={{ backgroundImage: `url('${import.meta.env.BASE_URL}Covers/Mohh cover.png')`, minHeight: "70vh" }}
       >
         <div className="absolute inset-0 bg-black/40" />
       </section>
@@ -202,27 +157,21 @@ const MohhProject = () => {
           <p className="text-lg text-foreground/80 leading-relaxed">
             Beyond design, we place equal emphasis on precision and execution. At Mohh, we prepare detailed production drawings with complete journey specifications, exploded views, and assembly drawings for both factory teams and customers. Every product is documented with foam layering details, bill of materials, and cost calculations, ensuring clarity, consistency, and manufacturing efficiency from concept to completion.
           </p>
-        </div>
-      </section>
 
-
-      {/* Products Section with Tabs */}
-      <section className="py-20 px-4">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12">Products</h2>
-          
-          <Tabs defaultValue="storage" className="w-full">
-            <TabsList className="inline-flex w-full max-w-full mx-auto mb-12 overflow-x-auto">
-              <TabsTrigger value="storage">Storage</TabsTrigger>
-              <TabsTrigger value="chairs">Chairs</TabsTrigger>
-              <TabsTrigger value="barstools">Bar Stools</TabsTrigger>
-              <TabsTrigger value="loungechairs">Lounge Chairs</TabsTrigger>
-              <TabsTrigger value="sofas">Sofas</TabsTrigger>
-              <TabsTrigger value="consoles">Consoles</TabsTrigger>
-              <TabsTrigger value="tables">Tables</TabsTrigger>
-              <TabsTrigger value="decor">Decor</TabsTrigger>
-              {/* <TabsTrigger value="drawings">Drawings</TabsTrigger> */}
-            </TabsList>
+          <Tabs defaultValue="chairs" className="mt-8">
+            <div className="w-full flex justify-center">
+              <TabsList className="inline-flex space-x-4">
+                <TabsTrigger value="chairs" className="px-4">Chairs</TabsTrigger>
+                <TabsTrigger value="barstools" className="px-4">Barstools</TabsTrigger>
+                <TabsTrigger value="consoles" className="px-4">Consoles</TabsTrigger>
+                <TabsTrigger value="tables" className="px-4">Tables</TabsTrigger>
+                <TabsTrigger value="loungechairs" className="px-4">Lounge Chairs</TabsTrigger>
+                <TabsTrigger value="sofas" className="px-4">Sofas</TabsTrigger>
+                <TabsTrigger value="storage" className="px-4">Storage</TabsTrigger>
+                <TabsTrigger value="drawings" className="px-4">Drawings</TabsTrigger>
+                <TabsTrigger value="decor" className="px-4">Decor</TabsTrigger>
+              </TabsList>
+            </div>
 
             <TabsContent value="chairs" className="mt-8">
               <div className="space-y-12">

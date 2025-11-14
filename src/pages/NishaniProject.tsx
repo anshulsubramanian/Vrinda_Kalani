@@ -19,32 +19,32 @@ const NishaniProject = () => {
     {
       name: "Retail Experience Design",
       description: "A thoughtfully crafted retail space that embodies the elegance and warmth of the Nishani brand. The design creates an intimate atmosphere where customers can explore and connect with jewellery in a personal, elevated setting.",
-      image: "/Nishani/Nishani1.jpg",
+    image: import.meta.env.BASE_URL + 'Nishani/Nishani1.jpg',
     },
     {
       name: "Brand Environment",
       description: "The space features signature pink tones and sophisticated display elements that create a cohesive brand experience. Each design detail reinforces the brand's identity while maintaining functionality and flow.",
-      image: "/Nishani/Nishani2.jpg",
+    image: import.meta.env.BASE_URL + 'Nishani/Nishani2.jpg',
     },
     {
       name: "Product Display System",
       description: "Custom-designed display solutions that showcase jewellery pieces with appropriate lighting and sightlines. The modular system allows for flexible arrangements while maintaining visual harmony throughout the space.",
-      image: "/Nishani/Nishani3.jpg",
+    image: import.meta.env.BASE_URL + 'Nishani/Nishani3.jpg',
     },
     {
       name: "Customer Interaction Zones",
       description: "Dedicated areas designed for customer engagement and consultation. The layout balances openness with intimacy, creating comfortable spaces for browsing and detailed product exploration.",
-      image: "/Nishani/Nishani4.jpg",
+    image: import.meta.env.BASE_URL + 'Nishani/Nishani4.jpg',
     },
     {
       name: "Architectural Details",
       description: "Refined architectural elements including curved frames, integrated signage, and layered spatial design. These details create visual interest while supporting the overall brand narrative.",
-      image: "/Nishani/Nishani5.jpg",
+    image: import.meta.env.BASE_URL + 'Nishani/Nishani5.jpg',
     },
     {
       name: "Material Palette",
       description: "A curated selection of materials including soft pinks, natural wood tones, and metallic accents. The palette creates warmth and sophistication while ensuring durability in a retail environment.",
-      image: "/Nishani/Nishani6.jpg",
+    image: import.meta.env.BASE_URL + 'Nishani/Nishani6.jpg',
     },
   ];
 
@@ -67,7 +67,7 @@ const NishaniProject = () => {
       <section 
         className="pt-32 pb-16 px-4 relative bg-cover bg-center"
         style={{ 
-          backgroundImage: "url('/Covers/Nishani cover.png')",
+          backgroundImage: `url('${import.meta.env.BASE_URL}Covers/Nishani cover.png')`,
           minHeight: "70vh"
         }}
       >
@@ -106,7 +106,7 @@ const NishaniProject = () => {
           </div>
           <div className="rounded-2xl overflow-hidden shadow-2xl">
             <img 
-              src="/mood_boards/Nishani Mood Board.png" 
+              src={import.meta.env.BASE_URL + 'mood_boards/Nishani Mood Board.png'} 
               alt="Nishani Mood Board" 
               className="w-full h-[600px] object-cover"
             />
@@ -150,7 +150,7 @@ const NishaniProject = () => {
             <article className="group bg-card rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
               <div className="overflow-hidden">
                 <img 
-                  src="/Nishani/store_1.jpg" 
+                  src={import.meta.env.BASE_URL + 'Nishani/store_1.jpg'} 
                   alt="Physical Store View 1"
                   className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
                 />
@@ -159,7 +159,7 @@ const NishaniProject = () => {
             <article className="group bg-card rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
               <div className="overflow-hidden">
                 <img 
-                  src="/Nishani/store_2.jpg" 
+                  src={import.meta.env.BASE_URL + 'Nishani/store_2.jpg'} 
                   alt="Physical Store View 2"
                   className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
                 />
@@ -168,7 +168,7 @@ const NishaniProject = () => {
             <article className="group bg-card rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
               <div className="overflow-hidden">
                 <img 
-                  src="/Nishani/store_3.jpg" 
+                  src={import.meta.env.BASE_URL + 'Nishani/store_3.jpg'} 
                   alt="Physical Store View 3"
                   className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
                 />
@@ -177,7 +177,7 @@ const NishaniProject = () => {
             <article className="group bg-card rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
               <div className="overflow-hidden">
                 <img 
-                  src="/Nishani/store_4.jpg" 
+                  src={import.meta.env.BASE_URL + 'Nishani/store_4.jpg'} 
                   alt="Physical Store View 4"
                   className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
                 />

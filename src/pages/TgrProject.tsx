@@ -13,37 +13,37 @@ const TgrProject = () => {
     {
       name: "Yucca Coffee Table",
       description: "Rooted in form and balance, the Yucca Coffee Table embodies quiet sophistication. Its sculptural silhouette and refined finish bring depth and intention to contemporary living spaces.",
-      image: "/TGR/Yucca Coffee Table.jpeg",
+  image: import.meta.env.BASE_URL + 'TGR/Yucca Coffee Table.jpeg',
     },
     {
       name: "The Orba Bar Table",
       description: "Brings form and function into perfect balance. Defined by clean lines, tactile finishes, and enduring materials, designed for open-air gatherings that blend ease with sophistication.",
-      image: "/TGR/Orba Bar Table.jpeg",
+  image: import.meta.env.BASE_URL + 'TGR/Orba Bar Table.jpeg',
     },
     {
       name: "Dunea Sofa",
       description: "Captures the fluid elegance of desert landscapes. Its softly curved frame and tactile weave evoke the rhythm of shifting sands, while generous cushions offer an inviting sense of ease.",
-      image: "/TGR/Dunea Sofa.jpeg",
+  image: import.meta.env.BASE_URL + 'TGR/Dunea Sofa.jpeg',
     },
     {
       name: "Sirocco Swing",
       description: "Inspired by the warm desert winds, it embodies effortless grace and balance. Its rounded form and woven texture create a sense of weightless comfort, inviting calm and gentle motion.",
-      image: "/TGR/Sirocco Swing.jpeg",
+  image: import.meta.env.BASE_URL + 'TGR/Sirocco Swing.jpeg',
     },
     {
       name: "Canna Side Table",
       description: "Playful yet poised, draws inspiration from natural balance and sculptural simplicity. Its geometric composition creates a sense of grounded elegance.",
-      image: "/TGR/Canna Side Table.png",
+  image: import.meta.env.BASE_URL + 'TGR/Canna Side Table.png',
     },
     {
       name: "Agava Dining Table",
       description: "Celebrates contrast and balance through its sculptural composition and tactile presence. The interplay of smooth and woven textures creates a sense of warmth and refinement.",
-      image: "/TGR/Agava Dining Table.png",
+  image: import.meta.env.BASE_URL + 'TGR/Agava Dining Table.png',
     },
     {
       name: "Avara Cabinet",
       description: "Combines lightness and function with a sculptural, pole-mounted form. Blending woven textures and warm wood, it offers elegant storage and a refined presence.",
-      image: "/TGR/Avara Cabinet.jpeg",
+  image: import.meta.env.BASE_URL + 'TGR/Avara Cabinet.jpeg',
     },
   ];
 
@@ -66,7 +66,7 @@ const TgrProject = () => {
       <section 
         className="pt-32 pb-16 px-4 relative bg-cover bg-center"
         style={{ 
-          backgroundImage: "url('/Covers/Garden Room Cover.png')",
+          backgroundImage: `url('${import.meta.env.BASE_URL}Covers/Garden Room Cover.png')`,
           minHeight: "70vh"
         }}
       >
@@ -89,7 +89,7 @@ const TgrProject = () => {
           </div>
           <div className="rounded-2xl overflow-hidden shadow-2xl">
             <img 
-              src="/mood_boards/TGR Mood Board.jpeg" 
+              src={import.meta.env.BASE_URL + 'mood_boards/TGR Mood Board.jpeg'} 
               alt="TGR Mood Board" 
               className="w-full h-[600px] object-cover"
             />
@@ -103,7 +103,7 @@ const TgrProject = () => {
           <h2 className="text-4xl font-bold mb-12">Sketches</h2>
           <div className="rounded-2xl overflow-hidden shadow-2xl">
             <img 
-              src="/TGR/TGR sketches.png" 
+              src={import.meta.env.BASE_URL + 'TGR/TGR sketches.png'} 
               alt="TGR Design Sketches" 
               className="w-full object-cover"
             />
@@ -145,25 +145,25 @@ const TgrProject = () => {
           <h2 className="text-xl text-muted-foreground mb-12">As showcased in Design Democracy, Hyderabad, September 2025</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="rounded-2xl overflow-hidden shadow-lg aspect-[4/3]">
-              <img src="/TGR/TGRAdditional1.jpg" alt="Additional View 1" className="w-full h-full object-cover" />
+              <img src={import.meta.env.BASE_URL + 'TGR/TGRAdditional1.jpg'} alt="Additional View 1" className="w-full h-full object-cover" />
             </div>
             <div className="rounded-2xl overflow-hidden shadow-lg aspect-[4/3]">
-              <img src="/TGR/TGRAddtional2.jpg" alt="Additional View 2" className="w-full h-full object-cover" />
+              <img src={import.meta.env.BASE_URL + 'TGR/TGRAddtional2.jpg'} alt="Additional View 2" className="w-full h-full object-cover" />
             </div>
             <div className="rounded-2xl overflow-hidden shadow-lg aspect-[4/3]">
-              <img src="/TGR/TGRAdditional3.jpg" alt="Additional View 3" className="w-full h-full object-cover" />
+              <img src={import.meta.env.BASE_URL + 'TGR/TGRAdditional3.jpg'} alt="Additional View 3" className="w-full h-full object-cover" />
             </div>
             <div className="rounded-2xl overflow-hidden shadow-lg aspect-[4/3]">
-              <img src="/TGR/TGRAdditonal4.jpg" alt="Additional View 4" className="w-full h-full object-cover" />
+              <img src={import.meta.env.BASE_URL + 'TGR/TGRAdditonal4.jpg'} alt="Additional View 4" className="w-full h-full object-cover" />
             </div>
             <div className="rounded-2xl overflow-hidden shadow-lg aspect-[4/3]">
-              <img src="/TGR/TGRAdditional5.jpg" alt="Additional View 5" className="w-full h-full object-cover" />
+              <img src={import.meta.env.BASE_URL + 'TGR/TGRAdditional5.jpg'} alt="Additional View 5" className="w-full h-full object-cover" />
             </div>
             <div className="rounded-2xl overflow-hidden shadow-lg aspect-[4/3]">
-              <video src="/TGR/TGRV1.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover" />
+              <video src={import.meta.env.BASE_URL + 'TGR/TGRV1.mp4'} autoPlay loop muted playsInline className="w-full h-full object-cover" />
             </div>
             <div className="rounded-2xl overflow-hidden shadow-lg aspect-[4/3]">
-              <video src="/TGR/TGRV2.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover" />
+              <video src={import.meta.env.BASE_URL + 'TGR/TGRV2.mp4'} autoPlay loop muted playsInline className="w-full h-full object-cover" />
             </div>
           </div>
         </div>

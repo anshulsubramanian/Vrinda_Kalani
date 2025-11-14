@@ -120,7 +120,7 @@ const WhiteMinimalProject = () => {
       {/* Hero Section */}
       <section
         className="pt-32 pb-16 px-4 relative bg-cover bg-center"
-        style={{ backgroundImage: "url('/Covers/yellow white cover.png')", minHeight: "70vh" }}
+        style={{ backgroundImage: `url('${import.meta.env.BASE_URL}Covers/yellow white cover.png')`, minHeight: "70vh" }}
       >
         <div className="absolute inset-0 bg-black/40" />
       </section>
@@ -145,7 +145,7 @@ const WhiteMinimalProject = () => {
             </p>
           </div>
           <div className="rounded-2xl overflow-hidden shadow-2xl">
-            <img src="/mood_boards/YellowWhiteMoodBoard.jpeg" alt="White Studios Minimal mood board" className="w-full h-[600px] object-cover" />
+            <img src={import.meta.env.BASE_URL + 'mood_boards/YellowWhiteMoodBoard.jpeg'} alt="White Studios Minimal mood board" className="w-full h-[600px] object-cover" />
           </div>
         </div>
       </section>
