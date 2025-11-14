@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 5%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 5%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 10% 3.9%;
+
+    --secondary: 240 4% 16%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 4% 16%;
+    --muted-foreground: 240 5% 65%;
+
+    --accent: 240 4% 16%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 50.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 4% 16%;
+    --input: 240 4% 16%;
+    --ring: 240 5% 84%;
+
+    --radius: 0.75rem;
+
+    /* Custom design tokens */
+    --gradient-start: 45 100% 50%;
+    --gradient-middle: 45 90% 45%;
+    --gradient-end: 38 95% 40%;
+    
+    --pill-bg: 0 0% 100%;
+    --pill-fg: 240 10% 3.9%;
+    
+    --nav-blur: 240 10% 8% / 0.8;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "cv11", "ss01";
+    font-variation-settings: "opsz" 32;
+  }
+  
+  /* Gradient background */
+  .gradient-bg {
+    background: linear-gradient(
+      135deg, 
+      hsl(var(--gradient-start)) 0%,
+      hsl(var(--gradient-middle)) 50%,
+      hsl(var(--gradient-end)) 100%
+    );
+  }
+  
+  /* Glass morphism effect */
+  .glass {
+    background: hsl(var(--nav-blur));
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+  }
+}
+
+/* Animations */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Stacking effect styles */
+.perspective-\[1000px\] {
+  perspective: 1000px;
+}
+
+.visible {
+  opacity: 1 !important;
+}
+
+.being-stacked {
+  opacity: 0.6 !important;
+  filter: brightness(0.9);
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease forwards;
+}
