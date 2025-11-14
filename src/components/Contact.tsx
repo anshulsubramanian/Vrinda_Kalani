@@ -10,7 +10,7 @@ const Contact = () => {
         
         <div className="flex flex-col gap-6">
           <a
-            href="mailto:vrindakalani@gmail.com"
+            href="mailto:vrindakalaniapplications@gmail.com"
             className="inline-flex items-center gap-3 text-2xl md:text-3xl font-semibold text-foreground border-b-2 border-foreground hover:border-transparent transition-all duration-300 animate-fade-in-up w-fit"
             style={{ animationDelay: "0.1s", opacity: 0 }}
           >

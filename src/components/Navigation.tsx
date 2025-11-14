@@ -13,7 +13,7 @@ const Navigation = () => {
     <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50 animate-fade-in-up">
       <div className="glass rounded-full px-6 py-3 flex items-center gap-6 border border-white/10">
         <div className="flex items-center gap-4">
-          <a href="/" className="w-10 h-10 rounded-full overflow-hidden border-2 border-border transition-transform hover:scale-105">
+          <a href="/#hero" className="w-10 h-10 rounded-full overflow-hidden border-2 border-border transition-transform hover:scale-105">
             <img src={import.meta.env.BASE_URL + 'Covers/vrinda.jpeg'} alt="Vrinda Kalani" className="w-full h-full object-cover" />
           </a>
           

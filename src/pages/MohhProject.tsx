@@ -85,7 +85,6 @@ const MohhProject = () => {
   ];
 
   const drawings = [
-    { name: "Zephyr Sideboard Technical Drawing", images: [import.meta.env.BASE_URL + 'Mohh/drawings/zephyr_sideboard_drawing.jpg'] },
     { name: "Brooks Sideboard Technical Drawing", images: [import.meta.env.BASE_URL + 'Mohh/drawings/brooks_sideboard_drawing.jpg'] },
     { name: "Evara Barstool Technical Drawing", images: [import.meta.env.BASE_URL + 'Mohh/drawings/evara_barstool_drawing.jpg'] },
     { name: "Quinn Lounge Chair Technical Drawing", images: [
@@ -158,16 +157,16 @@ const MohhProject = () => {
             Beyond design, we place equal emphasis on precision and execution. At Mohh, we prepare detailed production drawings with complete journey specifications, exploded views, and assembly drawings for both factory teams and customers. Every product is documented with foam layering details, bill of materials, and cost calculations, ensuring clarity, consistency, and manufacturing efficiency from concept to completion.
           </p>
 
-          <Tabs defaultValue="chairs" className="mt-8">
+          <Tabs defaultValue="storage" className="mt-8">
             <div className="w-full flex justify-center">
               <TabsList className="inline-flex space-x-4">
+                <TabsTrigger value="storage" className="px-4">Storage</TabsTrigger>
                 <TabsTrigger value="chairs" className="px-4">Chairs</TabsTrigger>
                 <TabsTrigger value="barstools" className="px-4">Barstools</TabsTrigger>
                 <TabsTrigger value="consoles" className="px-4">Consoles</TabsTrigger>
                 <TabsTrigger value="tables" className="px-4">Tables</TabsTrigger>
                 <TabsTrigger value="loungechairs" className="px-4">Lounge Chairs</TabsTrigger>
                 <TabsTrigger value="sofas" className="px-4">Sofas</TabsTrigger>
-                <TabsTrigger value="storage" className="px-4">Storage</TabsTrigger>
                 <TabsTrigger value="drawings" className="px-4">Drawings</TabsTrigger>
                 <TabsTrigger value="decor" className="px-4">Decor</TabsTrigger>
               </TabsList>
@@ -184,7 +183,7 @@ const MohhProject = () => {
                           <img 
                             src={image} 
                             alt={`${product.name} view ${imgIndex + 1}`} 
-                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" 
+                            className="w-full h-auto object-contain hover:scale-105 transition-transform duration-300" 
                             loading="lazy" 
                           />
                         </div>
@@ -206,7 +205,7 @@ const MohhProject = () => {
                           <img 
                             src={image} 
                             alt={`${product.name} view ${imgIndex + 1}`} 
-                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" 
+                            className="w-full h-auto object-contain hover:scale-105 transition-transform duration-300" 
                             loading="lazy" 
                           />
                         </div>
@@ -228,7 +227,7 @@ const MohhProject = () => {
                           <img 
                             src={image} 
                             alt={`${product.name} view ${imgIndex + 1}`} 
-                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" 
+                            className="w-full h-auto object-contain hover:scale-105 transition-transform duration-300" 
                             loading="lazy" 
                           />
                         </div>
@@ -250,7 +249,7 @@ const MohhProject = () => {
                           <img 
                             src={image} 
                             alt={`${product.name} view ${imgIndex + 1}`} 
-                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" 
+                            className="w-full h-auto object-contain hover:scale-105 transition-transform duration-300" 
                             loading="lazy" 
                           />
                         </div>
@@ -272,7 +271,7 @@ const MohhProject = () => {
                           <img
                             src={image}
                             alt={`${product.name} view ${imgIndex + 1}`}
-                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                            className="w-full h-auto object-contain hover:scale-105 transition-transform duration-300"
                             loading="lazy"
                           />
                         </div>
@@ -294,7 +293,7 @@ const MohhProject = () => {
                           <img
                             src={image}
                             alt={`${product.name} view ${imgIndex + 1}`}
-                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                            className="w-full h-auto object-contain hover:scale-105 transition-transform duration-300"
                             loading="lazy"
                           />
                         </div>

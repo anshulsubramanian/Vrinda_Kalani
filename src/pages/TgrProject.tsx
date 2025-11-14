@@ -91,7 +91,7 @@ const TgrProject = () => {
             <img 
               src={import.meta.env.BASE_URL + 'mood_boards/TGR Mood Board.jpeg'} 
               alt="TGR Mood Board" 
-              className="w-full h-[600px] object-cover"
+              className="w-full h-auto object-contain"
             />
           </div>
         </div>
@@ -105,7 +105,7 @@ const TgrProject = () => {
             <img 
               src={import.meta.env.BASE_URL + 'TGR/TGR sketches.png'} 
               alt="TGR Design Sketches" 
-              className="w-full object-cover"
+              className="w-full h-auto object-contain"
             />
           </div>
         </div>
@@ -121,11 +121,11 @@ const TgrProject = () => {
                 key={index}
                 className="group bg-card rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
               >
-                <div className="aspect-[4/3] overflow-hidden">
+                <div className="rounded-xl overflow-hidden">
                   <img 
                     src={product.image} 
                     alt={product.name}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-125"
+                    className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-6">
@@ -144,26 +144,26 @@ const TgrProject = () => {
           <h2 className="text-4xl font-bold mb-12">Additional Views</h2>
           <h2 className="text-xl text-muted-foreground mb-12">As showcased in Design Democracy, Hyderabad, September 2025</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="rounded-2xl overflow-hidden shadow-lg aspect-[4/3]">
-              <img src={import.meta.env.BASE_URL + 'TGR/TGRAdditional1.jpg'} alt="Additional View 1" className="w-full h-full object-cover" />
+            <div className="rounded-2xl overflow-hidden shadow-lg">
+              <img src={import.meta.env.BASE_URL + 'TGR/TGRAdditional1.jpg'} alt="Additional View 1" className="w-full h-auto object-contain" />
             </div>
-            <div className="rounded-2xl overflow-hidden shadow-lg aspect-[4/3]">
-              <img src={import.meta.env.BASE_URL + 'TGR/TGRAddtional2.jpg'} alt="Additional View 2" className="w-full h-full object-cover" />
+            <div className="rounded-2xl overflow-hidden shadow-lg">
+              <img src={import.meta.env.BASE_URL + 'TGR/TGRAddtional2.jpg'} alt="Additional View 2" className="w-full h-auto object-contain" />
             </div>
-            <div className="rounded-2xl overflow-hidden shadow-lg aspect-[4/3]">
-              <img src={import.meta.env.BASE_URL + 'TGR/TGRAdditional3.jpg'} alt="Additional View 3" className="w-full h-full object-cover" />
+            <div className="rounded-2xl overflow-hidden shadow-lg">
+              <img src={import.meta.env.BASE_URL + 'TGR/TGRAdditional3.jpg'} alt="Additional View 3" className="w-full h-auto object-contain" />
             </div>
-            <div className="rounded-2xl overflow-hidden shadow-lg aspect-[4/3]">
-              <img src={import.meta.env.BASE_URL + 'TGR/TGRAdditonal4.jpg'} alt="Additional View 4" className="w-full h-full object-cover" />
+            <div className="rounded-2xl overflow-hidden shadow-lg">
+              <img src={import.meta.env.BASE_URL + 'TGR/TGRAdditonal4.jpg'} alt="Additional View 4" className="w-full h-auto object-contain" />
             </div>
-            <div className="rounded-2xl overflow-hidden shadow-lg aspect-[4/3]">
-              <img src={import.meta.env.BASE_URL + 'TGR/TGRAdditional5.jpg'} alt="Additional View 5" className="w-full h-full object-cover" />
+            <div className="rounded-2xl overflow-hidden shadow-lg">
+              <img src={import.meta.env.BASE_URL + 'TGR/TGRAdditional5.jpg'} alt="Additional View 5" className="w-full h-auto object-contain" />
             </div>
-            <div className="rounded-2xl overflow-hidden shadow-lg aspect-[4/3]">
-              <video src={import.meta.env.BASE_URL + 'TGR/TGRV1.mp4'} autoPlay loop muted playsInline className="w-full h-full object-cover" />
+            <div className="rounded-2xl overflow-hidden shadow-lg">
+              <video src={import.meta.env.BASE_URL + 'TGR/TGRV1.mp4'} autoPlay loop muted playsInline className="w-full h-auto object-contain" />
             </div>
-            <div className="rounded-2xl overflow-hidden shadow-lg aspect-[4/3]">
-              <video src={import.meta.env.BASE_URL + 'TGR/TGRV2.mp4'} autoPlay loop muted playsInline className="w-full h-full object-cover" />
+            <div className="rounded-2xl overflow-hidden shadow-lg">
+              <video src={import.meta.env.BASE_URL + 'TGR/TGRV2.mp4'} autoPlay loop muted playsInline className="w-full h-auto object-contain" />
             </div>
           </div>
         </div>

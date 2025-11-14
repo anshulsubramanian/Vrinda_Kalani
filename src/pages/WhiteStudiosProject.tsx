@@ -85,7 +85,7 @@ const WhiteStudiosProject = () => {
             <img 
               src={import.meta.env.BASE_URL + 'mood_boards/mood board new.png'} 
               alt="White Studios Mood Board" 
-              className="w-full h-[600px] object-cover"
+              className="w-full h-auto object-contain"
             />
           </div>
         </div>
@@ -129,15 +129,15 @@ const WhiteStudiosProject = () => {
                 {product.images.length > 0 && (
                   <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {product.images.map((image, imgIndex) => (
-                      <div key={imgIndex} className="rounded-xl overflow-hidden">
-                        <img
-                          src={image}
-                          alt={`${product.name} view ${imgIndex + 1}`}
-                          className="w-full h-full object-cover"
-                          loading="lazy"
-                        />
-                      </div>
-                    ))}
+                              <div key={imgIndex} className="rounded-xl overflow-hidden flex items-center justify-center bg-white">
+                                <img
+                                  src={image}
+                                  alt={`${product.name} view ${imgIndex + 1}`}
+                                  className="w-full h-auto object-contain"
+                                  loading="lazy"
+                                />
+                              </div>
+                            ))}
                   </div>
                 )}
               </article>
