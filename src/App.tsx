@@ -18,7 +18,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-  <BrowserRouter basename="/Vrinda_Kalani">
+  <BrowserRouter basename="/">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/tgr-project" element={<TgrProject />} />
