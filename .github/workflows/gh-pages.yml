@@ -17,8 +17,8 @@ jobs:
       - name: Checkout main branch ONLY
         uses: actions/checkout@v4
         with:
-          ref: main          # <- DO NOT fetch gh-pages anymore
-          fetch-depth: 0     # full history for Vite assets hashing
+          ref: main
+          fetch-depth: 0
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -34,11 +34,15 @@ jobs:
       - name: Show dist files
         run: |
           echo "===== DIST ROOT ====="
-          ls -la dist
+          ls -la dist || true
           echo "===== DIST ASSETS ====="
-          ls -la dist/assets
+          ls -la dist/assets || true
           echo "===== HEAD dist/index.html ====="
-          head -n 40 dist/index.html
+          head -n 60 dist/index.html || true
+
+      - name: Copy index.html to 404.html (for SPA routing on Pages)
+        run: |
+          cp dist/index.html dist/404.html || true
 
       - name: Deploy to gh-pages (force orphan)
         uses: peaceiris/actions-gh-pages@v4
