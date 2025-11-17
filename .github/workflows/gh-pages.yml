@@ -1,5 +1,3 @@
-name: Build and Deploy DIST to GitHub Pages
-
 # Trigger on pushes to main (all your changes are in main)
 on:
   push:
@@ -19,7 +17,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          # fetch full history (peaceiris may need this)
           fetch-depth: 0
 
       - name: Set up Node.js
@@ -33,8 +30,22 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deploy to gh-pages
+      # 🔍 DEBUG STEP — shows your built files so you know what is being deployed
+      - name: Show dist files
+        run: |
+          echo "===== DIST ROOT ====="
+          ls -la dist
+          echo ""
+          echo "===== DIST ASSETS ====="
+          ls -la dist/assets
+          echo ""
+          echo "===== HEAD dist/index.html ====="
+          head -n 80 dist/index.html
+
+      # 🚀 DEPLOY STEP — completely overwrites gh-pages using force_orphan
+      - name: Deploy to gh-pages (force orphan)
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          force_orphan: true
