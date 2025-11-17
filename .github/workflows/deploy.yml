@@ -29,13 +29,21 @@ jobs:
         with:
           path: dist
 
+  # --- START OF CHANGES IN THE DEPLOY JOB ---
   deploy:
     needs: build-and-deploy
     runs-on: ubuntu-latest
     permissions:
       pages: write
       id-token: write
+      
+    environment:
+      name: github-pages
+      # Optional: Add the URL output for visibility in the Actions UI
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Deploy to GitHub Pages
+        id: deployment # Added 'id' to reference the output URL above
         uses: actions/deploy-pages@v4
+
