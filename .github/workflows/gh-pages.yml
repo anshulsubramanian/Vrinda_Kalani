@@ -1,23 +1,24 @@
-# Trigger on pushes to main (all your changes are in main)
+name: Build and Deploy to GitHub Pages
+
 on:
   push:
     branches:
       - main
 
-# Grant the token write permissions required to push built files
 permissions:
-  contents: write    # allow pushing to branches
-  pages: write       # allow Pages actions
+  contents: write
+  pages: write
   id-token: write
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout main branch ONLY
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          ref: main          # <- DO NOT fetch gh-pages anymore
+          fetch-depth: 0     # full history for Vite assets hashing
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -30,22 +31,19 @@ jobs:
       - name: Build
         run: npm run build
 
-      # 🔍 DEBUG STEP — shows your built files so you know what is being deployed
       - name: Show dist files
         run: |
           echo "===== DIST ROOT ====="
           ls -la dist
-          echo ""
           echo "===== DIST ASSETS ====="
           ls -la dist/assets
-          echo ""
           echo "===== HEAD dist/index.html ====="
-          head -n 80 dist/index.html
+          head -n 40 dist/index.html
 
-      # 🚀 DEPLOY STEP — completely overwrites gh-pages using force_orphan
       - name: Deploy to gh-pages (force orphan)
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           force_orphan: true
+          keep_files: false
